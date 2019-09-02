@@ -2,7 +2,6 @@
 
 namespace Statamic\Addons\BusinessLogic;
 
-use Statamic\API\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Statamic\Extend\Controller;
@@ -10,17 +9,17 @@ use Statamic\Extend\Controller;
 class BusinessLogicController extends Controller
 {
     
-    // Call this by sending a GET request to /!/businesslogic/example
+    // Call this by sending a GET request to /!/BusinessLogic/example
     public function getExample() {
 
 		// API calls are located under BusinessLogicAPI.php
-		$call = $this->api('BusinessLogic')->exampleCall();
+		$call = $this->api('BusinessLogic')->exampleParamCall('foo');
 
 		return response($call, 200);
     	
     }
 
-    // Call this by sending a GET request to /!/businesslogic/queryexample/{variable}
+    // Call this by sending a GET request to /!/BusinessLogic/queryexample/{variable}
     public function getQueryExample($var1) {
 
 		return response($var1, 200);
@@ -28,7 +27,7 @@ class BusinessLogicController extends Controller
     }
 
 
-    // Call this by sending a POST request to /!/businesslogic/example
+    // Call this by sending a POST request to /!/BusinessLogic/example
     public function postExample(Request $request) {
 
     	//do something with the Request

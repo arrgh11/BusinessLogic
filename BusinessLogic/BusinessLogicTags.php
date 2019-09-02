@@ -32,6 +32,21 @@ class BusinessLogicTags extends Tags
     }
 
     /**
+     * The {{ business_logic:params foo="bar"}} tag
+     *
+     * @return string|array
+     */
+    public function params()
+
+    {
+
+        $foo = $this->getParam('foo');
+
+        return $foo;
+
+    }
+
+    /**
      * The {{ business_logic:config }} tag
      *
      * This is returning a configuration variable. Config variables can be set up in:
