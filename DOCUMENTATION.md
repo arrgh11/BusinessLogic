@@ -1,6 +1,7 @@
 ## Installation ##
 
-1. Just copy BusinessLogic folder to `site/addons`!
+1. Copy BusinessLogic folder to the `site/addons` directory.
+2. Run `php please update:addons`
 
 ## Usage
 
