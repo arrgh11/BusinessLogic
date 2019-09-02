@@ -1,0 +1,7 @@
+fields:
+  allowAnonymous:
+    type: toggle
+    display: 'Allow Anonymous'
+  foo:
+    type: text
+    display: 'Foo'

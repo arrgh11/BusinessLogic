@@ -1,0 +1,5 @@
+name: BusinessLogic
+version: '1.0'
+description: 'A quick way to get started creating business logic for Statamic'
+developer: 'Sam Miller'
+commercial: true
